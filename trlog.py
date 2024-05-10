@@ -22,15 +22,13 @@ def parselog():
         # Ok, we have a first stage match.  This gets the date, loglevel, system, callnumber, talkgroup, frequency and
         # everything else to parse. Then we will regex again to pull data from everything else.
         if match:
-            calldata = match.group(7)
+            calldata = match[7]
             # Technically this isn't a real unixtimestamp as it's not timezone aware,
             # but we're just using it to create a unique index identifier.
-            calldate = datetime.datetime.strptime(
-                match.group(1), "%Y-%m-%d %H:%M:%S.%f"
-            )
+            calldate = datetime.datetime.strptime(match[1], "%Y-%m-%d %H:%M:%S.%f")
             callts = calldate.timestamp()
             # Index for the dict is timestamp(ish)-talkgroup
-            callindex = str(int(callts)) + "-" + match.group(5)
+            callindex = str(int(callts)) + "-" + match[5]
 
             # Second round of regexp.  Now we are going to harvest data from calldata - the "everything else"
             # Yes, this does need to be refactored as a loop ...
@@ -43,11 +41,11 @@ def parselog():
                 calldict[callindex].update(
                     {
                         "calldate": calldate,
-                        "loglevel": match.group(2),
-                        "system": match.group(3),
-                        "callnumber": match.group(4),
-                        "talkgroup": match.group(5),
-                        "frequency": match.group(6),
+                        "loglevel": match[2],
+                        "system": match[3],
+                        "callnumber": match[4],
+                        "talkgroup": match[5],
+                        "frequency": match[6],
                     }
                 )
                 continue
@@ -58,12 +56,12 @@ def parselog():
                 calldict[callindex] = {"encrypted": True}
                 calldict[callindex].update(
                     {
-                        "calldate": match.group(1),
-                        "loglevel": match.group(2),
-                        "system": match.group(3),
-                        "callnumber": match.group(4),
-                        "talkgroup": match.group(5),
-                        "frequency": match.group(6),
+                        "calldate": calldate,
+                        "loglevel": match[2],
+                        "system": match[3],
+                        "callnumber": match[4],
+                        "talkgroup": match[5],
+                        "frequency": match[6],
                     }
                 )
                 continue
@@ -74,12 +72,12 @@ def parselog():
                 calldict[callindex] = {"unknown_talkgroup": True}
                 calldict[callindex].update(
                     {
-                        "calldate": match.group(1),
-                        "loglevel": match.group(2),
-                        "system": match.group(3),
-                        "callnumber": match.group(4),
-                        "talkgroup": match.group(5),
-                        "frequency": match.group(6),
+                        "calldate": calldate,
+                        "loglevel": match[2],
+                        "system": match[3],
+                        "callnumber": match[4],
+                        "talkgroup": match[5],
+                        "frequency": match[6],
                     }
                 )
                 continue
@@ -87,15 +85,15 @@ def parselog():
             data_pattern = r".*Call Elapsed:\s+(\d+)"
             datamatch = re.match(data_pattern, calldata)
             if datamatch:
-                calldict[callindex] = {"duration": datamatch.group(1)}
+                calldict[callindex] = {"duration": datamatch[1]}
                 calldict[callindex].update(
                     {
-                        "calldate": match.group(1),
-                        "loglevel": match.group(2),
-                        "system": match.group(3),
-                        "callnumber": match.group(4),
-                        "talkgroup": match.group(5),
-                        "frequency": match.group(6),
+                        "calldate": calldate,
+                        "loglevel": match[2],
+                        "system": match[3],
+                        "callnumber": match[4],
+                        "talkgroup": match[5],
+                        "frequency": match[6],
                     }
                 )
                 continue
@@ -104,8 +102,7 @@ def parselog():
 
 
 def pandasconvert(calldict):
-    calldf = pd.DataFrame.from_dict(calldict, orient="index")
-    return calldf
+    return pd.DataFrame.from_dict(calldict, orient="index")
 
 
 def main():

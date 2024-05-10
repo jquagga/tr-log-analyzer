@@ -77,6 +77,9 @@ def parselog():
             data_pattern = r".*Call Elapsed:\s+(\d+)"
             if datamatch := re.match(data_pattern, calldata):
                 calldict[callindex] = {"duration": datamatch[1]}
+                # This log event happens at the end of a call, so we should adjust the calltime
+                # back by duration seconds to get to the start.
+                calldate = calldate + datetime.timedelta(seconds=-int(datamatch[1]))
                 calldict[callindex].update(
                     {
                         "calldate": calldate,
@@ -98,7 +101,7 @@ def pandasconvert(calldict):
 def main():
     calldict = parselog()
     calldf = pandasconvert(calldict)
-    print(calldf)
+    calldf.sort_values(by="calldate", inplace=True)
     calldf.to_csv("tr.csv.gz", index=False)
 
 

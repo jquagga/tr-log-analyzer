@@ -14,7 +14,11 @@ def parselog():
     calldict = {}
     logfile = gzip.open("tr.log.gz", "rt")
     # Define the regex pattern for our log entries
-    log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+)\S+\s+\S+\s+(\d+).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
+    # line = "[2024-05-09 12:31:45.009426] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.72949	Call Elapsed: 12"
+    log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+).*TG:.*\((.*)\).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
+    # If you DO NOT have "talkgroupDisplayFormat": "id_tag" set, you can change the log_pattern to this below to grab the numeric
+    # talkgroup numbers:
+    # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+)\S+\s+\S+\s+(\d+).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
     for line in logfile:
         if match := re.match(log_pattern, line):
             calldata = match[7]
@@ -38,7 +42,7 @@ def parselog():
                         "loglevel": match[2],
                         "system": match[3],
                         "callnumber": match[4],
-                        "talkgroup": match[5],
+                        "talkgroup": match[5].strip(),
                         "frequency": match[6],
                     }
                 )
@@ -53,7 +57,7 @@ def parselog():
                         "loglevel": match[2],
                         "system": match[3],
                         "callnumber": match[4],
-                        "talkgroup": match[5],
+                        "talkgroup": match[5].strip(),
                         "frequency": match[6],
                     }
                 )
@@ -68,7 +72,7 @@ def parselog():
                         "loglevel": match[2],
                         "system": match[3],
                         "callnumber": match[4],
-                        "talkgroup": match[5],
+                        "talkgroup": match[5].strip(),
                         "frequency": match[6],
                     }
                 )
@@ -86,7 +90,7 @@ def parselog():
                         "loglevel": match[2],
                         "system": match[3],
                         "callnumber": match[4],
-                        "talkgroup": match[5],
+                        "talkgroup": match[5].strip(),
                         "frequency": match[6],
                     }
                 )

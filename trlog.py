@@ -41,9 +41,9 @@ def parselog():
                         "calldate": calldate,
                         "loglevel": match[2],
                         "system": match[3],
-                        "callnumber": match[4],
+                        "callnumber": int(match[4]),
                         "talkgroup": match[5].strip(),
-                        "frequency": match[6],
+                        "frequency": float(match[6]),
                     }
                 )
                 continue
@@ -56,9 +56,9 @@ def parselog():
                         "calldate": calldate,
                         "loglevel": match[2],
                         "system": match[3],
-                        "callnumber": match[4],
+                        "callnumber": int(match[4]),
                         "talkgroup": match[5].strip(),
-                        "frequency": match[6],
+                        "frequency": float(match[6]),
                     }
                 )
                 continue
@@ -71,16 +71,16 @@ def parselog():
                         "calldate": calldate,
                         "loglevel": match[2],
                         "system": match[3],
-                        "callnumber": match[4],
+                        "callnumber": int(match[4]),
                         "talkgroup": match[5].strip(),
-                        "frequency": match[6],
+                        "frequency": float(match[6]),
                     }
                 )
                 continue
             # Concluding Recorded Call - Last Update: 4s	Recorder last write:4.4819	Call Elapsed: 7
             data_pattern = r".*Call Elapsed:\s+(\d+)"
             if datamatch := re.match(data_pattern, calldata):
-                calldict[callindex] = {"duration": datamatch[1]}
+                calldict[callindex] = {"duration": int(datamatch[1])}
                 # This log event happens at the end of a call, so we should adjust the calltime
                 # back by duration seconds to get to the start.
                 calldate = calldate + datetime.timedelta(seconds=-int(datamatch[1]))
@@ -89,9 +89,9 @@ def parselog():
                         "calldate": calldate,
                         "loglevel": match[2],
                         "system": match[3],
-                        "callnumber": match[4],
+                        "callnumber": int(match[4]),
                         "talkgroup": match[5].strip(),
-                        "frequency": match[6],
+                        "frequency": float(match[6]),
                     }
                 )
     logfile.close()

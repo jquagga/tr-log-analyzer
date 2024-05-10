@@ -1,0 +1,707 @@
+[2024-05-09 12:22:28.311725] (info)   
+-------------------------------------
+     Trunk Recorder
+-------------------------------------
+[2024-05-09 12:22:28.311823] (info)   
+
+-------------------------------------
+INSTANCE
+-------------------------------------
+[2024-05-09 12:22:28.311842] (info)   Using Config file: /app/config.json
+[2024-05-09 12:22:28.311854] (info)   Trunk-Recorder: Version: 4.7.1
+[2024-05-09 12:22:28.311866] (info)   Log to File: false
+[2024-05-09 12:22:28.311891] (info)   Log Directory: logs
+[2024-05-09 12:22:28.311929] (info)   Temporary Transmission Directory: /dev/shm
+[2024-05-09 12:22:28.311951] (info)   Capture Directory: /app/media
+[2024-05-09 12:22:28.311965] (info)   Upload Server: 
+[2024-05-09 12:22:28.311978] (info)   Broadcastify Calls Server: 
+[2024-05-09 12:22:28.311990] (info)   Status Server: 
+[2024-05-09 12:22:28.312003] (info)   Instance Key: 
+[2024-05-09 12:22:28.312015] (info)   Instance Id: 
+[2024-05-09 12:22:28.312028] (info)   Broadcast Signals: false
+[2024-05-09 12:22:28.312041] (info)   Default Mode: digital
+[2024-05-09 12:22:28.312053] (info)   Call Timeout (seconds): 3
+[2024-05-09 12:22:28.312096] (info)   Control channel warning rate: 5
+[2024-05-09 12:22:28.312115] (info)   Control channel retune limit: 0
+[2024-05-09 12:22:28.312128] (info)   Phase 1 Software Vocoder: false
+[2024-05-09 12:22:28.312141] (info)   Enable Audio Streaming: false
+[2024-05-09 12:22:28.312154] (info)   Record Unit to Unit Voice Calls: true
+[2024-05-09 12:22:28.312167] (info)   New Call from UPDATE Messagestrue
+[2024-05-09 12:22:28.312219] (info)   Frequency format: mhz
+[2024-05-09 12:22:28.312232] (info)   Status as String: true
+[2024-05-09 12:22:28.312246] (info)   Log Level: info
+[2024-05-09 12:22:28.312263] (info)   Color Console/Logfile Output: console
+[2024-05-09 12:22:28.312279] (info)   
+-------------------------------------
+SYSTEMS
+-------------------------------------
+[2024-05-09 12:22:28.312328] (info)   
+
+System Number: 1
+-------------------------------------
+[2024-05-09 12:22:28.312347] (info)   Short Name: pwcp25
+[2024-05-09 12:22:28.312362] (info)   System Type: p25
+[2024-05-09 12:22:28.312378] (info)   Control Channels: 
+[2024-05-09 12:22:28.312395] (info)     853.600000 MHz
+[2024-05-09 12:22:28.312451] (info)     853.625000 MHz
+[2024-05-09 12:22:28.312472] (info)     853.850000 MHz
+[2024-05-09 12:22:28.312495] (info)     853.875000 MHz
+[2024-05-09 12:22:28.312517] (info)   Loading Talkgroups...
+[2024-05-09 12:22:28.312530] (info)   Reading Talkgroup CSV File: ChanList.csv
+[2024-05-09 12:22:28.313323] (info)   Found Columns: Decimal, Mode, Alpha Tag, Description, Category, Priority
+[2024-05-09 12:22:28.313722] (info)   Read 97 talkgroups.
+[2024-05-09 12:22:28.313788] (info)   Talkgroups File: ChanList.csv
+[2024-05-09 12:22:28.313813] (info)   Conversation Mode: true
+[2024-05-09 12:22:28.313828] (info)   Analog Recorder Maximum Deviation: 4000
+[2024-05-09 12:22:28.313842] (info)   Filter Width: 1
+[2024-05-09 12:22:28.313870] (info)   Squelch: -160
+[2024-05-09 12:22:28.313885] (info)   API Key: 
+[2024-05-09 12:22:28.313898] (info)   Broadcastify API Key: 
+[2024-05-09 12:22:28.313911] (info)   Broadcastify Calls System ID: 0
+[2024-05-09 12:22:28.313925] (info)   Upload Script: ./encode-upload.sh
+[2024-05-09 12:22:28.313939] (info)   Compress .wav Files: false
+[2024-05-09 12:22:28.313954] (info)   Call Log: true
+[2024-05-09 12:22:28.313967] (info)   Audio Archive: false
+[2024-05-09 12:22:28.313981] (info)   Transmission Archive: false
+[2024-05-09 12:22:28.313996] (info)   Loading Unit Tags...
+[2024-05-09 12:22:28.314008] (info)   Unit Tags File: 
+[2024-05-09 12:22:28.314021] (info)   Record Unknown Talkgroups: false
+[2024-05-09 12:22:28.314034] (info)   Decode MDC: false
+[2024-05-09 12:22:28.314047] (info)   Decode FSync: false
+[2024-05-09 12:22:28.314061] (info)   Decode Star: false
+[2024-05-09 12:22:28.314074] (info)   Decode TPS: false
+[2024-05-09 12:22:28.314088] (info)   Talkgroup Display Format: id_tag
+[2024-05-09 12:22:28.314105] (info)   Hide Encrypted Talkgroups: false
+[2024-05-09 12:22:28.314121] (info)   Hide Unknown Talkgroups: false
+[2024-05-09 12:22:28.314134] (info)   Minimum Call Duration (in seconds): 0
+[2024-05-09 12:22:28.314150] (info)   Maximum Call Duration (in seconds): 0
+[2024-05-09 12:22:28.314165] (info)   Minimum Transmission Duration (in seconds): 0
+[2024-05-09 12:22:28.314180] (info)   Multiple Site System: false
+[2024-05-09 12:22:28.314193] (info)   Multiple Site System Name: 
+[2024-05-09 12:22:28.314205] (info)   Multiple Site System Number: 0
+[2024-05-09 12:22:28.314226] (info)   
+[2024-05-09 12:22:28.314253] (info)   
+
+-------------------------------------
+SOURCES
+-------------------------------------
+[2024-05-09 12:22:28.314276] (info)   Driver: osmosdr
+[2024-05-09 12:22:28.314290] (info)   Device: rtl=128
+[2024-05-09 12:22:28.314310] (info)   Center: 853.643750 MHz
+[2024-05-09 12:22:28.314344] (info)   Rate: 2048000
+[2024-05-09 12:22:28.314365] (info)   Error: 900
+[2024-05-09 12:22:28.314382] (info)   PPM Error: 0
+[2024-05-09 12:22:28.314397] (info)   Auto gain control: false
+[2024-05-09 12:22:28.314410] (info)   Gain: 23
+[2024-05-09 12:22:28.314423] (info)   IF Gain: 0
+[2024-05-09 12:22:28.314438] (info)   BB Gain: 0
+[2024-05-09 12:22:28.314451] (info)   LNA Gain: 0
+[2024-05-09 12:22:28.314466] (info)   PGA Gain: 0
+[2024-05-09 12:22:28.314479] (info)   TIA Gain: 0
+[2024-05-09 12:22:28.314491] (info)   MIX Gain: 0
+[2024-05-09 12:22:28.314504] (info)   AMP Gain: 0
+[2024-05-09 12:22:28.314516] (info)   VGA Gain: 0
+[2024-05-09 12:22:28.314528] (info)   VGA1 Gain: 0
+[2024-05-09 12:22:28.314541] (info)   VGA2 Gain: 0
+[2024-05-09 12:22:28.314554] (info)   Idle Silence: 0
+[2024-05-09 12:22:28.314575] (info)   Source Device: rtl=128
+gr-osmosdr 0.2.0.0 (0.2.0) gnuradio 3.10.5.1
+built-in source types: file fcd rtl rtl_tcp uhd miri hackrf bladerf rfspace airspy airspyhf soapy redpitaya freesrp xtrx 
+Using device #1 Realtek RTL2838UHIDIR SN: 128
+Found Rafael Micro R820T tuner
+[R82XX] PLL not locked!
+[2024-05-09 12:22:28.859177] (info)   SOURCE TYPE OSMOSDR (osmosdr)
+[2024-05-09 12:22:28.859247] (info)   Setting sample rate to: 2048000
+[R82XX] PLL not locked!
+[2024-05-09 12:22:28.944307] (info)   Actual sample rate: 2048000
+[2024-05-09 12:22:28.944428] (info)   Tuning to 853.644650 MHz
+[2024-05-09 12:22:28.974301] (info)   Gain Stage: LNA supported values: 0 0.9 1.4 2.7 3.7 7.7 8.7 12.5 14.4 15.7 16.6 19.7 20.7 22.9 25.4 28 29.7 32.8 33.8 36.4 37.2 38.6 40.2 42.1 43.4 43.9 44.5 48 49.6 
+[2024-05-09 12:22:28.992615] (info)   Gain set to: 22.9
+[2024-05-09 12:22:28.992657] (info)   Auto gain control is OFF
+[2024-05-09 12:22:28.992688] (info)   Setting antenna to [RX]
+[2024-05-09 12:22:28.992706] (info)   Max Frequency: 854.603750 MHz
+[2024-05-09 12:22:28.992746] (info)   Min Frequency: 852.683750 MHz
+[2024-05-09 12:22:28.992791] (info)   Digital Recorders: 5
+[2024-05-09 12:22:28.992810] (info)   SigMF Recorders: 0
+[2024-05-09 12:22:28.992826] (info)   Analog Recorders: 0
+[2024-05-09 12:22:28.994632] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:29.263813] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:29.264127] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+Project 25 IMBE Encoder/Decoder Fixed-Point implementation
+Developed by Pavel Yazev E-mail: pyazev@gmail.com
+Version 1.0 (c) Copyright 2009
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions; see the file ``LICENSE'' for details.
+[2024-05-09 12:22:29.519335] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:29.527671] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:29.527895] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:29.534228] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:29.542639] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:29.542734] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:29.549863] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:29.558239] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:29.558330] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:29.566472] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:29.575346] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:29.575438] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:29.583862] (info)   
+-------------------------------------
+
+[2024-05-09 12:22:29.583945] (info)   Driver: osmosdr
+[2024-05-09 12:22:29.583961] (info)   Device: rtl=256
+[2024-05-09 12:22:29.583982] (info)   Center: 852.171875 MHz
+[2024-05-09 12:22:29.584041] (info)   Rate: 2048000
+[2024-05-09 12:22:29.584064] (info)   Error: 600
+[2024-05-09 12:22:29.584084] (info)   PPM Error: 0
+[2024-05-09 12:22:29.584100] (info)   Auto gain control: false
+[2024-05-09 12:22:29.584114] (info)   Gain: 23
+[2024-05-09 12:22:29.584127] (info)   IF Gain: 0
+[2024-05-09 12:22:29.584140] (info)   BB Gain: 0
+[2024-05-09 12:22:29.584152] (info)   LNA Gain: 0
+[2024-05-09 12:22:29.584164] (info)   PGA Gain: 0
+[2024-05-09 12:22:29.584224] (info)   TIA Gain: 0
+[2024-05-09 12:22:29.584237] (info)   MIX Gain: 0
+[2024-05-09 12:22:29.584250] (info)   AMP Gain: 0
+[2024-05-09 12:22:29.584266] (info)   VGA Gain: 0
+[2024-05-09 12:22:29.584279] (info)   VGA1 Gain: 0
+[2024-05-09 12:22:29.584293] (info)   VGA2 Gain: 0
+[2024-05-09 12:22:29.584306] (info)   Idle Silence: 0
+[2024-05-09 12:22:29.584323] (info)   Source Device: rtl=256
+gr-osmosdr 0.2.0.0 (0.2.0) gnuradio 3.10.5.1
+built-in source types: file fcd rtl rtl_tcp uhd miri hackrf bladerf rfspace airspy airspyhf soapy redpitaya freesrp xtrx 
+Using device #0 Realtek RTL2838UHIDIR SN: 256
+Found Rafael Micro R820T tuner
+[R82XX] PLL not locked!
+[2024-05-09 12:22:30.118595] (info)   SOURCE TYPE OSMOSDR (osmosdr)
+[2024-05-09 12:22:30.118675] (info)   Setting sample rate to: 2048000
+[R82XX] PLL not locked!
+[2024-05-09 12:22:30.203456] (info)   Actual sample rate: 2048000
+[2024-05-09 12:22:30.203655] (info)   Tuning to 852.172475 MHz
+[2024-05-09 12:22:30.232965] (info)   Gain Stage: LNA supported values: 0 0.9 1.4 2.7 3.7 7.7 8.7 12.5 14.4 15.7 16.6 19.7 20.7 22.9 25.4 28 29.7 32.8 33.8 36.4 37.2 38.6 40.2 42.1 43.4 43.9 44.5 48 49.6 
+[2024-05-09 12:22:30.251298] (info)   Gain set to: 22.9
+[2024-05-09 12:22:30.251333] (info)   Auto gain control is OFF
+[2024-05-09 12:22:30.251351] (info)   Setting antenna to [RX]
+[2024-05-09 12:22:30.251366] (info)   Max Frequency: 853.131875 MHz
+[2024-05-09 12:22:30.251392] (info)   Min Frequency: 851.211875 MHz
+[2024-05-09 12:22:30.251413] (info)   Digital Recorders: 10
+[2024-05-09 12:22:30.251431] (info)   SigMF Recorders: 0
+[2024-05-09 12:22:30.251444] (info)   Analog Recorders: 0
+[2024-05-09 12:22:30.252311] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.285577] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.285672] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.295637] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.304831] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.304925] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.315615] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.325060] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.325154] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.337040] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.346617] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.346713] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.359321] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.369155] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.369253] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.383408] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.393781] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.393911] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.408388] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.418694] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.418794] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.433909] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.444628] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.444730] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.460699] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.471317] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.471418] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.488280] (info)   	 P25 Recorder two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.499236] (info)   	 P25 Recorder ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 ARB Rate: 0.75 SPS: 6
+[2024-05-09 12:22:30.499339] (info)   	 P25 Recorder Taps - lowpass: 31 bandpass: 77 cutoff: 39 arb: 291
+[2024-05-09 12:22:30.515756] (info)   
+-------------------------------------
+
+[2024-05-09 12:22:30.515832] (info)   
+
+-------------------------------------
+PLUGINS
+-------------------------------------
+[2024-05-09 12:22:30.515857] (info)   Setting up plugin -  Name: openmhz_uploader	 Library file: libopenmhz_uploader.so
+[2024-05-09 12:22:30.534633] (info)   Setting up plugin -  Name: broadcastify_uploader	 Library file: libbroadcastify_uploader.so
+[2024-05-09 12:22:30.536163] (info)   Setting up plugin -  Name: unit_script	 Library file: libunit_script.so
+[2024-05-09 12:22:30.537567] (info)   Setting up plugin -  Name: stat_socket	 Library file: libstat_socket.so
+[2024-05-09 12:22:30.540554] (info)   No plugins configured
+[2024-05-09 12:22:30.540649] (info)   
+
+[2024-05-09 12:22:30.540693] (info)   [pwcp25]	Started with Control Channel: 853.600000 MHz
+[2024-05-09 12:22:30.542321] (info)   	 P25 Trunking two-stage decimator - Initial decimated rate: 128000 Second decimated rate: 32000 FA: 6250 FB: 16000 System Rate: 2048000
+[2024-05-09 12:22:30.553844] (info)   	 P25 Trunking ARB - Initial Rate: 2048000 Resampled Rate: 32000 Initial Decimation: 16 System Rate: 24000 ARB Rate: 0.75
+[2024-05-09 12:22:31.381064] (info)   [pwcp25]	Decoding System Site RFSS: 001 SITE ID: 001 (001-001)
+[2024-05-09 12:22:31.574226] (error)   [pwcp25]	0C	TG:       3122 (         PWPD Central 1)	Freq:   0.000000 MHz	Not Recording: no source covering Freq
+[2024-05-09 12:22:31.706165] (info)   [pwcp25]	1C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:31.838671] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:31.838798] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	This was an UPDATE
+[2024-05-09 12:22:31.960742] (info)   [pwcp25]	Decoding System ID 4EC WACN: BEE00 NAC: 4E1
+[2024-05-09 12:22:33.050698] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3291474	current: -1	 samples: 0
+[2024-05-09 12:22:33.317803] (info)   [pwcp25]	3C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:22:35.740538] (info)   [pwcp25]	4C	TG:       2003 (                PWFD 5B)	Freq: 852.787500 MHz	Starting P25 Recorder Num [1]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:36.512399] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3296605	current: -1	 samples: 0
+[2024-05-09 12:22:36.718416] (info)   [pwcp25]	5C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:22:38.005216] (info)   [pwcp25]	1C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.4819	Call Elapsed: 7
+[2024-05-09 12:22:38.005798] (info)   [pwcp25]	1C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -62
+[2024-05-09 12:22:38.022087] (info)   [pwcp25]	1C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	- Transmission src: 3298049 pos:  0.00 length:  1.44
+[2024-05-09 12:22:38.074663] (info)   [pwcp25]	1C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257351_851962500.0-call_1.wav /app/media/pwcp25/2024/5/9/2003-1715257351_851962500.0-call_1.json /app/media/pwcp25/2024/5/9/2003-1715257351_851962500.0-call_1.m4a
+[2024-05-09 12:22:39.451846] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3291474	current: -1	 samples: 0
+[2024-05-09 12:22:40.342488] (info)   [pwcp25]	6C	TG:       2001 (                PWFD 5A)	Freq: 851.725000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:46.008995] (info)   [pwcp25]	6C	TG:       2001 (                PWFD 5A)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:5.12144	Call Elapsed: 6
+[2024-05-09 12:22:46.009235] (info)   [pwcp25]	6C	TG:       2001 (                PWFD 5A)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -26
+[2024-05-09 12:22:46.013153] (info)   [pwcp25]	6C	TG:       2001 (                PWFD 5A)	Freq: 851.725000 MHz	- Transmission src: 3296614 pos:  0.00 length:  0.36
+[2024-05-09 12:22:46.056121] (info)   [pwcp25]	6C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2001-1715257360_851725000.0-call_6.wav /app/media/pwcp25/2024/5/9/2001-1715257360_851725000.0-call_6.json /app/media/pwcp25/2024/5/9/2001-1715257360_851725000.0-call_6.m4a
+[2024-05-09 12:22:48.863330] (info)   [pwcp25]	7C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:49.007133] (info)   [pwcp25]	4C	TG:       2003 (                PWFD 5B)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.75313	Call Elapsed: 14
+[2024-05-09 12:22:49.008299] (info)   [pwcp25]	4C	TG:       2003 (                PWFD 5B)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [1]	TDMA: false	Slot: 0	Hz Error: -77
+[2024-05-09 12:22:49.011866] (info)   [pwcp25]	4C	TG:       2003 (                PWFD 5B)	Freq: 852.787500 MHz	- Transmission src: 3298034 pos:  0.00 length:  8.10
+[2024-05-09 12:22:49.073973] (info)   [pwcp25]	4C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257355_852787500.0-call_4.wav /app/media/pwcp25/2024/5/9/2003-1715257355_852787500.0-call_4.json /app/media/pwcp25/2024/5/9/2003-1715257355_852787500.0-call_4.m4a
+[2024-05-09 12:22:49.769182] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3296605	current: -1	 samples: 0
+[2024-05-09 12:22:50.003173] (info)   [pwcp25]	8C	TG:       1003 (            PWPD East 1)	Freq: 851.962500 MHz	Starting P25 Recorder Num [6]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:53.014916] (info)   [pwcp25]	9C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Starting P25 Recorder Num [7]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:53.847857] (info)   [pwcp25]	10C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:22:54.948420] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	Starting P25 Recorder Num [8]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:22:55.010126] (info)   [pwcp25]	7C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.52153	Call Elapsed: 7
+[2024-05-09 12:22:55.011219] (info)   [pwcp25]	7C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -78
+[2024-05-09 12:22:55.019231] (info)   [pwcp25]	7C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	- Transmission src: 3298049 pos:  0.00 length:  1.26
+[2024-05-09 12:22:55.071966] (info)   [pwcp25]	7C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257368_851987500.0-call_7.wav /app/media/pwcp25/2024/5/9/2003-1715257368_851987500.0-call_7.json /app/media/pwcp25/2024/5/9/2003-1715257368_851987500.0-call_7.m4a
+[2024-05-09 12:22:56.009743] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.653	Call Elapsed: 25
+[2024-05-09 12:22:56.010871] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Call was UPDATE not GRANT
+[2024-05-09 12:22:56.010988] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: 2
+[2024-05-09 12:22:56.013668] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	- Transmission src: -1 pos:  0.00 length:  0.36 errors: 90 spikes: 6
+[2024-05-09 12:22:56.015413] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	- Transmission src: 3291474 pos:  0.36 length:  2.16
+[2024-05-09 12:22:56.016727] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	- Transmission src: 3296605 pos:  2.52 length:  1.80 errors: 45 spikes: 3
+[2024-05-09 12:22:56.016799] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	- Transmission src: 3291474 pos:  4.32 length:  8.46
+[2024-05-09 12:22:56.016832] (info)   [pwcp25]	2C	TG:       3122 (         PWPD Central 1)	Freq: 852.900000 MHz	- Transmission src: 3296605 pos: 12.78 length:  1.26 errors: 45 spikes: 3
+[2024-05-09 12:22:56.067064] (info)   [pwcp25]	2C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257351_852900000.0-call_2.wav /app/media/pwcp25/2024/5/9/3122-1715257351_852900000.0-call_2.json /app/media/pwcp25/2024/5/9/3122-1715257351_852900000.0-call_2.m4a
+[2024-05-09 12:22:58.322171] (info)   [pwcp25]	12C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:22:58.704760] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	Unit ID set via Control Channel, ext: 3296608	current: -1	 samples: 0
+[2024-05-09 12:22:59.013612] (info)   [pwcp25]	9C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.73302	Call Elapsed: 6
+[2024-05-09 12:22:59.013752] (info)   [pwcp25]	9C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [7]	TDMA: false	Slot: 0	Hz Error: -120
+[2024-05-09 12:22:59.020262] (info)   [pwcp25]	9C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	- Transmission src: 3296612 pos:  0.00 length:  0.90
+[2024-05-09 12:22:59.082970] (info)   [pwcp25]	9C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257373_851725000.0-call_9.wav /app/media/pwcp25/2024/5/9/2003-1715257373_851725000.0-call_9.json /app/media/pwcp25/2024/5/9/2003-1715257373_851725000.0-call_9.m4a
+[2024-05-09 12:23:00.507185] (info)   [pwcp25]	8C	TG:       1003 (            PWPD East 1)	Freq: 851.962500 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:23:00.752214] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	Unit ID set via Control Channel, ext: 3291298	current: -1	 samples: 0
+[2024-05-09 12:23:04.537137] (info)   [pwcp25]	13C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:06.010641] (info)   [pwcp25]	8C	TG:       1003 (            PWPD East 1)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.00773	Call Elapsed: 17
+[2024-05-09 12:23:06.010781] (info)   [pwcp25]	8C	TG:       1003 (            PWPD East 1)	Freq: 851.962500 MHz	Stopping P25 Recorder Num [6]	TDMA: false	Slot: 0	Hz Error: -97
+[2024-05-09 12:23:06.013629] (info)   [pwcp25]	8C	TG:       1003 (            PWPD East 1)	Freq: 851.962500 MHz	- Transmission src: 3291730 pos:  0.00 length:  9.54
+[2024-05-09 12:23:06.013713] (info)   [pwcp25]	8C	TG:       1003 (            PWPD East 1)	Freq: 851.962500 MHz	- Transmission src: 3296604 pos:  9.54 length:  1.08
+[2024-05-09 12:23:06.068290] (info)   [pwcp25]	8C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715257369_851962500.0-call_8.wav /app/media/pwcp25/2024/5/9/1003-1715257369_851962500.0-call_8.json /app/media/pwcp25/2024/5/9/1003-1715257369_851962500.0-call_8.m4a
+[2024-05-09 12:23:11.712591] (info)   [pwcp25]	14C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:23:12.008486] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.56532	Call Elapsed: 18
+[2024-05-09 12:23:12.008630] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	Stopping P25 Recorder Num [8]	TDMA: false	Slot: 0	Hz Error: -94
+[2024-05-09 12:23:12.012632] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	- Transmission src: 3291298 pos:  0.00 length:  1.62
+[2024-05-09 12:23:12.012715] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	- Transmission src: 3296608 pos:  1.62 length:  0.90
+[2024-05-09 12:23:12.012748] (info)   [pwcp25]	11C	TG:       1007 (            PWPD West 1)	Freq: 851.987500 MHz	- Transmission src: 3291298 pos:  2.52 length:  6.30
+[2024-05-09 12:23:12.101300] (info)   [pwcp25]	11C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257374_851987500.0-call_11.wav /app/media/pwcp25/2024/5/9/1007-1715257374_851987500.0-call_11.json /app/media/pwcp25/2024/5/9/1007-1715257374_851987500.0-call_11.m4a
+[2024-05-09 12:23:13.558808] (info)   [pwcp25]	15C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:13.630177] (info)   [pwcp25]	16C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:23:13.648786] (info)   [pwcp25]	16C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	GROUP MISMATCH -  Recorder TG: 2003 Received TG: 1007 Recorder state: idle incoming: 1
+[2024-05-09 12:23:14.273018] (info)   [pwcp25]	17C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Starting P25 Recorder Num [1]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:23:18.570462] (info)   [pwcp25]	14C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:23:21.006260] (info)   [pwcp25]	17C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.75552	Call Elapsed: 7
+[2024-05-09 12:23:21.006748] (info)   [pwcp25]	17C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Stopping P25 Recorder Num [1]	TDMA: false	Slot: 0	Hz Error: -22
+[2024-05-09 12:23:21.010516] (info)   [pwcp25]	17C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	- Transmission src: 3296608 pos:  0.00 length:  1.62 errors: 45 spikes: 3
+[2024-05-09 12:23:21.059135] (info)   [pwcp25]	17C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257394_853175000.0-call_17.wav /app/media/pwcp25/2024/5/9/1007-1715257394_853175000.0-call_17.json /app/media/pwcp25/2024/5/9/1007-1715257394_853175000.0-call_17.m4a
+[2024-05-09 12:23:21.500533] (info)   [pwcp25]	18C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:23.432136] (info)   [pwcp25]	19C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	Starting P25 Recorder Num [6]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:23:24.005009] (info)   [pwcp25]	14C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:3.85507	Call Elapsed: 13
+[2024-05-09 12:23:24.005142] (info)   [pwcp25]	14C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -83
+[2024-05-09 12:23:24.008052] (info)   [pwcp25]	14C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3291730 pos:  0.00 length:  4.68
+[2024-05-09 12:23:24.008126] (info)   [pwcp25]	14C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3296604 pos:  4.68 length:  1.26 errors: 45 spikes: 3
+[2024-05-09 12:23:24.059501] (info)   [pwcp25]	14C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715257391_852900000.0-call_14.wav /app/media/pwcp25/2024/5/9/1003-1715257391_852900000.0-call_14.json /app/media/pwcp25/2024/5/9/1003-1715257391_852900000.0-call_14.m4a
+[2024-05-09 12:23:26.005761] (info)   [pwcp25]	16C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.79871	Call Elapsed: 13
+[2024-05-09 12:23:26.007808] (info)   [pwcp25]	16C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -128
+[2024-05-09 12:23:26.011525] (info)   [pwcp25]	16C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	- Transmission src: 3298049 pos:  0.00 length:  7.20
+[2024-05-09 12:23:26.058323] (info)   [pwcp25]	16C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257393_851725000.0-call_16.wav /app/media/pwcp25/2024/5/9/2003-1715257393_851725000.0-call_16.json /app/media/pwcp25/2024/5/9/2003-1715257393_851725000.0-call_16.m4a
+[2024-05-09 12:23:26.359653] (info)   [pwcp25]	20C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:27.058415] (info)   [pwcp25]	21C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:23:27.507028] (info)   [pwcp25]	22C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:30.907423] (info)   [pwcp25]	21C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Unit ID set via Control Channel, ext: 3296608	current: -1	 samples: 0
+[2024-05-09 12:23:36.011336] (info)   [pwcp25]	21C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.14206	Call Elapsed: 9
+[2024-05-09 12:23:36.011475] (info)   [pwcp25]	21C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -16
+[2024-05-09 12:23:36.014765] (info)   [pwcp25]	21C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	- Transmission src: 3290343 pos:  0.00 length:  1.80
+[2024-05-09 12:23:36.014864] (info)   [pwcp25]	21C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	- Transmission src: 3296608 pos:  1.80 length:  0.72 errors: 90 spikes: 6
+[2024-05-09 12:23:36.064584] (info)   [pwcp25]	21C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257407_853175000.0-call_21.wav /app/media/pwcp25/2024/5/9/1007-1715257407_853175000.0-call_21.json /app/media/pwcp25/2024/5/9/1007-1715257407_853175000.0-call_21.m4a
+[2024-05-09 12:23:40.007226] (info)   [pwcp25]	19C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.46966	Call Elapsed: 17
+[2024-05-09 12:23:40.007369] (info)   [pwcp25]	19C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	Stopping P25 Recorder Num [6]	TDMA: false	Slot: 0	Hz Error: -59
+[2024-05-09 12:23:40.021056] (info)   [pwcp25]	19C	TG:       2003 (                PWFD 5B)	Freq: 851.987500 MHz	- Transmission src: 3296612 pos:  0.00 length: 11.70 errors: 45 spikes: 3
+[2024-05-09 12:23:40.068248] (info)   [pwcp25]	19C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257403_851987500.0-call_19.wav /app/media/pwcp25/2024/5/9/2003-1715257403_851987500.0-call_19.json /app/media/pwcp25/2024/5/9/2003-1715257403_851987500.0-call_19.m4a
+[2024-05-09 12:23:45.111065] (info)   [pwcp25]	23C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:52.091819] (info)   [pwcp25]	24C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:59.001441] (info)   [pwcp25]	25C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:23:59.892864] (info)   [pwcp25]	26C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:01.109322] (info)   [pwcp25]	27C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:02.141189] (info)   [pwcp25]	28C	TG:       3032 (                      -)	Freq: 851.450000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:24:08.791786] (info)   [pwcp25]	29C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:10.906993] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:24:11.608369] (info)   [pwcp25]	31C	TG:       3040 (             PWSchBus C)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:12.320729] (info)   [pwcp25]	32C	TG:       3032 (                      -)	Freq: 852.725000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:24:14.431971] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:24:14.553978] (info)   [pwcp25]	33C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:16.614684] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Unit ID set via Control Channel, ext: 3290518	current: -1	 samples: 0
+[2024-05-09 12:24:22.111965] (info)   [pwcp25]	34C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:22.813162] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:24:26.204753] (info)   [pwcp25]	35C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:29.007596] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.65659	Call Elapsed: 19
+[2024-05-09 12:24:29.007753] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -78
+[2024-05-09 12:24:29.011302] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	- Transmission src: 3290518 pos:  0.00 length:  2.70
+[2024-05-09 12:24:29.012849] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	- Transmission src: 3296604 pos:  2.70 length:  0.90 errors: 45 spikes: 3
+[2024-05-09 12:24:29.012940] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	- Transmission src: 3290518 pos:  3.60 length:  5.40
+[2024-05-09 12:24:29.013636] (info)   [pwcp25]	30C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	- Transmission src: 3296604 pos:  9.00 length:  1.26 errors: 45 spikes: 3
+[2024-05-09 12:24:29.025726] (info)   [pwcp25]	36C	TG:       3032 (                      -)	Freq: 852.725000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:24:29.090882] (info)   [pwcp25]	30C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715257450_852787500.0-call_30.wav /app/media/pwcp25/2024/5/9/1003-1715257450_852787500.0-call_30.json /app/media/pwcp25/2024/5/9/1003-1715257450_852787500.0-call_30.m4a
+[2024-05-09 12:24:34.773614] (info)   [pwcp25]	37C	TG:       1007 (            PWPD West 1)	Freq: 852.900000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:24:40.409541] (info)   [pwcp25]	38C	TG:       3040 (             PWSchBus C)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:24:40.927306] (info)   [pwcp25]	39C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:24:41.760542] (info)   [pwcp25]	40C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Starting P25 Recorder Num [1]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:24:43.012329] (info)   [pwcp25]	37C	TG:       1007 (            PWPD West 1)	Freq: 852.900000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.51673	Call Elapsed: 9
+[2024-05-09 12:24:43.012644] (info)   [pwcp25]	37C	TG:       1007 (            PWPD West 1)	Freq: 852.900000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: 8
+[2024-05-09 12:24:43.024958] (info)   [pwcp25]	37C	TG:       1007 (            PWPD West 1)	Freq: 852.900000 MHz	- Transmission src: 3290436 pos:  0.00 length:  3.24
+[2024-05-09 12:24:43.071664] (info)   [pwcp25]	37C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257474_852900000.0-call_37.wav /app/media/pwcp25/2024/5/9/1007-1715257474_852900000.0-call_37.json /app/media/pwcp25/2024/5/9/1007-1715257474_852900000.0-call_37.m4a
+[2024-05-09 12:24:46.099340] (info)   [pwcp25]	39C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	Unit ID set via Control Channel, ext: 3297335	current: -1	 samples: 0
+[2024-05-09 12:24:48.013430] (info)   [pwcp25]	40C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.85055	Call Elapsed: 7
+[2024-05-09 12:24:48.013596] (info)   [pwcp25]	40C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	Stopping P25 Recorder Num [1]	TDMA: false	Slot: 0	Hz Error: -37
+[2024-05-09 12:24:48.020314] (info)   [pwcp25]	40C	TG:       1007 (            PWPD West 1)	Freq: 853.175000 MHz	- Transmission src: 3296608 pos:  0.00 length:  1.08 errors: 45 spikes: 3
+[2024-05-09 12:24:48.060928] (info)   [pwcp25]	40C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257481_853175000.0-call_40.wav /app/media/pwcp25/2024/5/9/1007-1715257481_853175000.0-call_40.json /app/media/pwcp25/2024/5/9/1007-1715257481_853175000.0-call_40.m4a
+[2024-05-09 12:24:50.970019] (info)   [pwcp25]	41C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:24:52.005905] (info)   [pwcp25]	39C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.46664	Call Elapsed: 12
+[2024-05-09 12:24:52.005996] (info)   [pwcp25]	39C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -18
+[2024-05-09 12:24:52.010752] (info)   [pwcp25]	39C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	- Transmission src: 3297420 pos:  0.00 length:  3.06
+[2024-05-09 12:24:52.011157] (info)   [pwcp25]	39C	TG:       2003 (                PWFD 5B)	Freq: 851.962500 MHz	- Transmission src: 3297335 pos:  3.06 length:  0.90
+[2024-05-09 12:24:52.070377] (info)   [pwcp25]	39C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257480_851962500.0-call_39.wav /app/media/pwcp25/2024/5/9/2003-1715257480_851962500.0-call_39.json /app/media/pwcp25/2024/5/9/2003-1715257480_851962500.0-call_39.m4a
+[2024-05-09 12:25:00.702508] (info)   [pwcp25]	42C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:25:02.552647] (info)   [pwcp25]	43C	TG:       1002 (         PWPD Admin Enc)	Freq: 852.787500 MHz	Not Recording: ENCRYPTED - src: 3290217
+[2024-05-09 12:25:03.515976] (info)   [pwcp25]	41C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3297335	current: -1	 samples: 0
+[2024-05-09 12:25:10.936577] (info)   [pwcp25]	44C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:25:12.012622] (info)   [pwcp25]	41C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.71645	Call Elapsed: 22
+[2024-05-09 12:25:12.012765] (info)   [pwcp25]	41C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -96
+[2024-05-09 12:25:12.018796] (info)   [pwcp25]	41C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	- Transmission src: 3297420 pos:  0.00 length: 10.62
+[2024-05-09 12:25:12.018888] (info)   [pwcp25]	41C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	- Transmission src: 3297335 pos: 10.62 length:  1.44
+[2024-05-09 12:25:12.019664] (info)   [pwcp25]	41C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	- Transmission src: 3297335 pos: 12.06 length:  1.26
+[2024-05-09 12:25:12.076951] (info)   [pwcp25]	41C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257490_852900000.0-call_41.wav /app/media/pwcp25/2024/5/9/2003-1715257490_852900000.0-call_41.json /app/media/pwcp25/2024/5/9/2003-1715257490_852900000.0-call_41.m4a
+[2024-05-09 12:25:17.209761] (info)   [pwcp25]	45C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:25:17.402208] (info)   [pwcp25]	46C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:25:18.010197] (info)   [pwcp25]	44C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.99974	Call Elapsed: 8
+[2024-05-09 12:25:18.010341] (info)   [pwcp25]	44C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -98
+[2024-05-09 12:25:18.015315] (info)   [pwcp25]	44C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	- Transmission src: 3296612 pos:  0.00 length:  1.80 errors: 45 spikes: 3
+[2024-05-09 12:25:18.100598] (info)   [pwcp25]	44C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257510_851725000.0-call_44.wav /app/media/pwcp25/2024/5/9/2003-1715257510_851725000.0-call_44.json /app/media/pwcp25/2024/5/9/2003-1715257510_851725000.0-call_44.m4a
+[2024-05-09 12:25:21.437204] (info)   [pwcp25]	47C	TG:       1002 (         PWPD Admin Enc)	Freq: 851.700000 MHz	Not Recording: ENCRYPTED - src: 3296607
+[2024-05-09 12:25:23.865813] (info)   [pwcp25]	48C	TG:       2001 (                PWFD 5A)	Freq: 851.725000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:25:29.001662] (info)   [pwcp25]	48C	TG:       2001 (                PWFD 5A)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:5.13575	Call Elapsed: 6
+[2024-05-09 12:25:29.001749] (info)   [pwcp25]	48C	TG:       2001 (                PWFD 5A)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -111
+[2024-05-09 12:25:29.004277] (error)   [pwcp25]	48C	TG:       2001 (                PWFD 5A)	 Freq: 851.725000 MHz	No Transmissions were recorded!
+[2024-05-09 12:25:31.543904] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:25:34.228904] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	Unit ID set via Control Channel, ext: 3296605	current: -1	 samples: 0
+[2024-05-09 12:25:36.856776] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	Unit ID set via Control Channel, ext: 3290619	current: -1	 samples: 0
+[2024-05-09 12:25:40.759337] (info)   [pwcp25]	50C	TG:       3040 (             PWSchBus C)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:25:41.843004] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	Unit ID set via Control Channel, ext: 3296605	current: -1	 samples: 0
+[2024-05-09 12:25:44.023728] (info)   [pwcp25]	51C	TG:       1007 (            PWPD West 1)	Freq: 852.787500 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:25:46.201348] (info)   [pwcp25]	52C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:25:46.395020] (info)   [pwcp25]	53C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:25:48.012299] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.8571	Call Elapsed: 17
+[2024-05-09 12:25:48.012445] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -122
+[2024-05-09 12:25:48.024824] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	- Transmission src: 3290619 pos:  0.00 length:  1.26
+[2024-05-09 12:25:48.024912] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	- Transmission src: 3296605 pos:  1.26 length:  0.90
+[2024-05-09 12:25:48.025478] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	- Transmission src: 3290619 pos:  2.16 length:  3.60
+[2024-05-09 12:25:48.025526] (info)   [pwcp25]	49C	TG:       3122 (         PWPD Central 1)	Freq: 851.987500 MHz	- Transmission src: 3296605 pos:  5.76 length:  1.08 errors: 45 spikes: 3
+[2024-05-09 12:25:48.068686] (info)   [pwcp25]	49C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257531_851987500.0-call_49.wav /app/media/pwcp25/2024/5/9/3122-1715257531_851987500.0-call_49.json /app/media/pwcp25/2024/5/9/3122-1715257531_851987500.0-call_49.m4a
+[2024-05-09 12:25:48.645633] (info)   [pwcp25]	54C	TG:       1007 (            PWPD West 1)	Freq: 851.725000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:25:51.006184] (info)   [pwcp25]	51C	TG:       1007 (            PWPD West 1)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.73885	Call Elapsed: 7
+[2024-05-09 12:25:51.006270] (info)   [pwcp25]	51C	TG:       1007 (            PWPD West 1)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -116
+[2024-05-09 12:25:51.008763] (info)   [pwcp25]	51C	TG:       1007 (            PWPD West 1)	Freq: 852.787500 MHz	- Transmission src: 3291619 pos:  0.00 length:  1.80
+[2024-05-09 12:25:51.019304] (info)   Currently Active Calls: 3
+[2024-05-09 12:25:51.019419] (info)   [pwcp25]	52C TG:       3042 (             PWSchBus W) Freq: 851.450000 MHz Elapsed:    5 State: monitoring : IGNORED TG
+[2024-05-09 12:25:51.020965] (info)   [pwcp25]	53C TG:       3040 (             PWSchBus C) Freq: 851.450000 MHz Elapsed:    5 State: monitoring : IGNORED TG
+[2024-05-09 12:25:51.022374] (info)   [pwcp25]	54C TG:       1007 (            PWPD West 1) Freq: 851.725000 MHz Elapsed:    3 State: recording
+[2024-05-09 12:25:51.023215] (info)   	[ 5 ] State: idle
+[2024-05-09 12:25:51.023245] (info)   Recorders: 
+[2024-05-09 12:25:51.023259] (info)   [ Source 0: 853.643750 MHz ] rtl=128
+[2024-05-09 12:25:51.023307] (info)   	[ 0 ] P25	State: available
+[2024-05-09 12:25:51.023324] (info)   	[ 1 ] P25	State: available
+[2024-05-09 12:25:51.023339] (info)   	[ 2 ] P25	State: available
+[2024-05-09 12:25:51.023353] (info)   	[ 3 ] P25	State: available
+[2024-05-09 12:25:51.023367] (info)   	[ 4 ] P25	State: available
+[2024-05-09 12:25:51.023387] (info)   [ Source 1: 852.171875 MHz ] rtl=256
+[2024-05-09 12:25:51.023410] (info)   	[ 5 ] P25	State: idle
+[2024-05-09 12:25:51.023424] (info)   	[ 6 ] P25	State: available
+[2024-05-09 12:25:51.023439] (info)   	[ 7 ] P25	State: available
+[2024-05-09 12:25:51.023453] (info)   	[ 8 ] P25	State: available
+[2024-05-09 12:25:51.023467] (info)   	[ 9 ] P25	State: available
+[2024-05-09 12:25:51.023481] (info)   	[ 10 ] P25	State: available
+[2024-05-09 12:25:51.023495] (info)   	[ 11 ] P25	State: available
+[2024-05-09 12:25:51.023510] (info)   	[ 12 ] P25	State: available
+[2024-05-09 12:25:51.023539] (info)   	[ 13 ] P25	State: available
+[2024-05-09 12:25:51.023558] (info)   	[ 14 ] P25	State: available
+[2024-05-09 12:25:51.023572] (info)   Control Channel Decode Rates: 
+[2024-05-09 12:25:51.023587] (info)   [pwcp25] 38 msg/sec
+[2024-05-09 12:25:51.050697] (info)   [pwcp25]	51C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257544_852787500.0-call_51.wav /app/media/pwcp25/2024/5/9/1007-1715257544_852787500.0-call_51.json /app/media/pwcp25/2024/5/9/1007-1715257544_852787500.0-call_51.m4a
+[2024-05-09 12:25:54.010653] (info)   [pwcp25]	54C	TG:       1007 (            PWPD West 1)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.57973	Call Elapsed: 6
+[2024-05-09 12:25:54.010795] (info)   [pwcp25]	54C	TG:       1007 (            PWPD West 1)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -58
+[2024-05-09 12:25:54.013250] (info)   [pwcp25]	54C	TG:       1007 (            PWPD West 1)	Freq: 851.725000 MHz	- Transmission src: 3296608 pos:  0.00 length:  0.54
+[2024-05-09 12:25:54.045974] (info)   [pwcp25]	54C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257548_851725000.0-call_54.wav /app/media/pwcp25/2024/5/9/1007-1715257548_851725000.0-call_54.json /app/media/pwcp25/2024/5/9/1007-1715257548_851725000.0-call_54.m4a
+[2024-05-09 12:25:54.268020] (info)   [pwcp25]	55C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:25:58.873242] (info)   [pwcp25]	56C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:26:05.397808] (info)   [pwcp25]	57C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:26:06.875901] (info)   [pwcp25]	58C	TG:       3040 (             PWSchBus C)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:26:14.042998] (info)   [pwcp25]	59C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:26:16.340692] (info)   [pwcp25]	60C	TG:       3025 (             PW-M ADC 3)	Freq: 852.787500 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:26:33.119696] (info)   [pwcp25]	61C	TG:       3025 (             PW-M ADC 3)	Freq: 851.962500 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:26:39.572625] (info)   [pwcp25]	62C	TG:       1002 (         PWPD Admin Enc)	Freq: 851.987500 MHz	Not Recording: ENCRYPTED - src: 3290225
+[2024-05-09 12:26:44.509904] (info)   [pwcp25]	63C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:26:55.000114] (info)   [pwcp25]	64C	TG:       3032 (                      -)	Freq: 852.725000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:27:00.121900] (info)   [pwcp25]	65C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:01.396806] (info)   [pwcp25]	66C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:27:05.366740] (info)   [pwcp25]	67C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:07.011484] (info)   [pwcp25]	66C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.90593	Call Elapsed: 6
+[2024-05-09 12:27:07.011622] (info)   [pwcp25]	66C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -157
+[2024-05-09 12:27:07.026054] (info)   [pwcp25]	66C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	- Transmission src: 3291578 pos:  0.00 length:  0.18
+[2024-05-09 12:27:07.061269] (info)   [pwcp25]	66C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715257621_852787500.0-call_66.wav /app/media/pwcp25/2024/5/9/1003-1715257621_852787500.0-call_66.json /app/media/pwcp25/2024/5/9/1003-1715257621_852787500.0-call_66.m4a
+[2024-05-09 12:27:15.993932] (info)   [pwcp25]	68C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:18.806876] (info)   [pwcp25]	69C	TG:       3030 (     PW 3030 Unknown TG)	Freq: 851.475000 MHz	Not Recording: ENCRYPTED - src: 3294550
+[2024-05-09 12:27:25.778158] (info)   [pwcp25]	70C	TG:       3040 (             PWSchBus C)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:30.780634] (info)   [pwcp25]	71C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:41.523153] (info)   [pwcp25]	72C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:42.170529] (info)   [pwcp25]	73C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:49.274542] (info)   [pwcp25]	74C	TG:       3025 (             PW-M ADC 3)	Freq: 851.700000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:49.467062] (info)   [pwcp25]	75C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:52.918909] (info)   [pwcp25]	76C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:27:55.742630] (info)   [pwcp25]	77C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:02.006576] (info)   [pwcp25]	78C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:03.546415] (info)   [pwcp25]	79C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:04.629410] (info)   [pwcp25]	80C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:11.225021] (info)   [pwcp25]	81C	TG:       3040 (             PWSchBus C)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:15.645469] (info)   [pwcp25]	82C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:22.867333] (info)   [pwcp25]	83C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:26.521563] (info)   [pwcp25]	84C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:28.951256] (info)   [pwcp25]	85C	TG:       3040 (             PWSchBus C)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:33.749196] (info)   [pwcp25]	86C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:35.155357] (info)   [pwcp25]	87C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:56.089891] (info)   [pwcp25]	88C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:28:59.863879] (info)   [pwcp25]	89C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:00.693914] (info)   [pwcp25]	90C	TG:       3025 (             PW-M ADC 3)	Freq: 851.987500 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:04.539608] (info)   [pwcp25]	91C	TG:       3025 (             PW-M ADC 3)	Freq: 851.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:05.237815] (info)   [pwcp25]	92C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:09.973009] (info)   [pwcp25]	93C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:12.017585] (info)   Currently Active Calls: 3
+[2024-05-09 12:29:12.017688] (info)   [pwcp25]	89C TG:       3040 (             PWSchBus C) Freq: 851.450000 MHz Elapsed:   13 State: monitoring : IGNORED TG
+[2024-05-09 12:29:12.017769] (info)   [pwcp25]	92C TG:       3038 (             PWSchBus E) Freq: 851.450000 MHz Elapsed:    7 State: monitoring : IGNORED TG
+[2024-05-09 12:29:12.017799] (info)   [pwcp25]	93C TG:       3042 (             PWSchBus W) Freq: 851.475000 MHz Elapsed:    3 State: monitoring : IGNORED TG
+[2024-05-09 12:29:12.017823] (info)   Recorders: 
+[2024-05-09 12:29:12.017837] (info)   [ Source 0: 853.643750 MHz ] rtl=128
+[2024-05-09 12:29:12.017862] (info)   	[ 0 ] P25	State: available
+[2024-05-09 12:29:12.017879] (info)   	[ 1 ] P25	State: available
+[2024-05-09 12:29:12.017893] (info)   	[ 2 ] P25	State: available
+[2024-05-09 12:29:12.017907] (info)   	[ 3 ] P25	State: available
+[2024-05-09 12:29:12.017921] (info)   	[ 4 ] P25	State: available
+[2024-05-09 12:29:12.017936] (info)   [ Source 1: 852.171875 MHz ] rtl=256
+[2024-05-09 12:29:12.017957] (info)   	[ 5 ] P25	State: available
+[2024-05-09 12:29:12.017979] (info)   	[ 6 ] P25	State: available
+[2024-05-09 12:29:12.017994] (info)   	[ 7 ] P25	State: available
+[2024-05-09 12:29:12.018009] (info)   	[ 8 ] P25	State: available
+[2024-05-09 12:29:12.018022] (info)   	[ 9 ] P25	State: available
+[2024-05-09 12:29:12.018036] (info)   	[ 10 ] P25	State: available
+[2024-05-09 12:29:12.018051] (info)   	[ 11 ] P25	State: available
+[2024-05-09 12:29:12.018065] (info)   	[ 12 ] P25	State: available
+[2024-05-09 12:29:12.018799] (info)   	[ 13 ] P25	State: available
+[2024-05-09 12:29:12.018914] (info)   	[ 14 ] P25	State: available
+[2024-05-09 12:29:12.018992] (info)   Control Channel Decode Rates: 
+[2024-05-09 12:29:12.019060] (info)   [pwcp25] 37 msg/sec
+[2024-05-09 12:29:17.078501] (info)   [pwcp25]	94C	TG:       3025 (             PW-M ADC 3)	Freq: 852.900000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:18.808891] (info)   [pwcp25]	95C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:24.505977] (info)   [pwcp25]	96C	TG:       3025 (             PW-M ADC 3)	Freq: 851.987500 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:31.992747] (info)   [pwcp25]	97C	TG:       3025 (             PW-M ADC 3)	Freq: 852.787500 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:36.790575] (info)   [pwcp25]	98C	TG:       3040 (             PWSchBus C)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:38.136874] (info)   [pwcp25]	99C	TG:       3025 (             PW-M ADC 3)	Freq: 853.175000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:38.966445] (info)   [pwcp25]	100C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:46.707462] (info)   [pwcp25]	101C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:50.805607] (info)   [pwcp25]	102C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:29:59.898222] (info)   [pwcp25]	103C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:11.355963] (info)   [pwcp25]	104C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:13.785590] (info)   [pwcp25]	105C	TG:       3122 (         PWPD Central 1)	Freq: 853.175000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:30:18.397977] (info)   [pwcp25]	105C	TG:       3122 (         PWPD Central 1)	Freq: 853.175000 MHz	Unit ID set via Control Channel, ext: 3296605	current: -1	 samples: 0
+[2024-05-09 12:30:19.931404] (info)   [pwcp25]	106C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:23.249482] (info)   [pwcp25]	107C	TG:       3122 (         PWPD Central 1)	Freq: 851.962500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:30:25.011097] (info)   [pwcp25]	105C	TG:       3122 (         PWPD Central 1)	Freq: 853.175000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:5.01665	Call Elapsed: 12
+[2024-05-09 12:30:25.012821] (info)   [pwcp25]	105C	TG:       3122 (         PWPD Central 1)	Freq: 853.175000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -11
+[2024-05-09 12:30:25.032542] (info)   [pwcp25]	105C	TG:       3122 (         PWPD Central 1)	Freq: 853.175000 MHz	- Transmission src: 3290051 pos:  0.00 length:  2.34
+[2024-05-09 12:30:25.032635] (info)   [pwcp25]	105C	TG:       3122 (         PWPD Central 1)	Freq: 853.175000 MHz	- Transmission src: 3296605 pos:  2.34 length:  1.26
+[2024-05-09 12:30:25.093728] (info)   [pwcp25]	105C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257813_853175000.0-call_105.wav /app/media/pwcp25/2024/5/9/3122-1715257813_853175000.0-call_105.json /app/media/pwcp25/2024/5/9/3122-1715257813_853175000.0-call_105.m4a
+[2024-05-09 12:30:26.969149] (info)   [pwcp25]	108C	TG:      65026 (                      -)	Freq: 851.725000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:30:27.546585] (info)   [pwcp25]	107C	TG:       3122 (         PWPD Central 1)	Freq: 851.962500 MHz	Unit ID set via Control Channel, ext: 3296605	current: -1	 samples: 0
+[2024-05-09 12:30:30.740973] (info)   [pwcp25]	109C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:31.189497] (info)   [pwcp25]	110C	TG:      65026 (                      -)	Freq: 851.700000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:30:34.971953] (info)   [pwcp25]	111C	TG:      65026 (                      -)	Freq: 852.900000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:30:38.678714] (info)   [pwcp25]	112C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:39.013173] (info)   [pwcp25]	107C	TG:       3122 (         PWPD Central 1)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:3.8285	Call Elapsed: 16
+[2024-05-09 12:30:39.013304] (info)   [pwcp25]	107C	TG:       3122 (         PWPD Central 1)	Freq: 851.962500 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -113
+[2024-05-09 12:30:39.015900] (info)   [pwcp25]	107C	TG:       3122 (         PWPD Central 1)	Freq: 851.962500 MHz	- Transmission src: 3290051 pos:  0.00 length:  2.52
+[2024-05-09 12:30:39.015982] (info)   [pwcp25]	107C	TG:       3122 (         PWPD Central 1)	Freq: 851.962500 MHz	- Transmission src: 3296605 pos:  2.52 length:  3.78 errors: 45 spikes: 3
+[2024-05-09 12:30:39.016112] (info)   [pwcp25]	107C	TG:       3122 (         PWPD Central 1)	Freq: 851.962500 MHz	- Transmission src: 3296605 pos:  6.30 length:  2.70 errors: 90 spikes: 6
+[2024-05-09 12:30:39.069350] (info)   [pwcp25]	107C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257823_851962500.0-call_107.wav /app/media/pwcp25/2024/5/9/3122-1715257823_851962500.0-call_107.json /app/media/pwcp25/2024/5/9/3122-1715257823_851962500.0-call_107.m4a
+[2024-05-09 12:30:41.303034] (info)   [pwcp25]	113C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:30:43.100857] (info)   [pwcp25]	114C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:48.602757] (info)   [pwcp25]	115C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:30:50.007296] (info)   [pwcp25]	113C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.22803	Call Elapsed: 9
+[2024-05-09 12:30:50.008065] (info)   [pwcp25]	113C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -63
+[2024-05-09 12:30:50.012671] (info)   [pwcp25]	113C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	- Transmission src: 3290126 pos:  0.00 length:  3.96
+[2024-05-09 12:30:50.070317] (info)   [pwcp25]	113C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257841_852787500.0-call_113.wav /app/media/pwcp25/2024/5/9/3122-1715257841_852787500.0-call_113.json /app/media/pwcp25/2024/5/9/3122-1715257841_852787500.0-call_113.m4a
+[2024-05-09 12:30:52.185609] (info)   [pwcp25]	116C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:53.341113] (info)   [pwcp25]	117C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:30:54.101188] (info)   [pwcp25]	118C	TG:       3122 (         PWPD Central 1)	Freq: 851.725000 MHz	Starting P25 Recorder Num [6]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:30:56.014156] (info)   [pwcp25]	115C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.12373	Call Elapsed: 8
+[2024-05-09 12:30:56.014291] (info)   [pwcp25]	115C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -80
+[2024-05-09 12:30:56.017507] (info)   [pwcp25]	115C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	- Transmission src: 3296605 pos:  0.00 length:  3.06
+[2024-05-09 12:30:56.074881] (info)   [pwcp25]	115C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257848_851700000.0-call_115.wav /app/media/pwcp25/2024/5/9/3122-1715257848_851700000.0-call_115.json /app/media/pwcp25/2024/5/9/3122-1715257848_851700000.0-call_115.m4a
+[2024-05-09 12:30:58.523168] (info)   [pwcp25]	119C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:31:00.005452] (info)   [pwcp25]	118C	TG:       3122 (         PWPD Central 1)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.33349	Call Elapsed: 6
+[2024-05-09 12:31:00.005587] (info)   [pwcp25]	118C	TG:       3122 (         PWPD Central 1)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [6]	TDMA: false	Slot: 0	Hz Error: -71
+[2024-05-09 12:31:00.012165] (info)   [pwcp25]	118C	TG:       3122 (         PWPD Central 1)	Freq: 851.725000 MHz	- Transmission src: 3290619 pos:  0.00 length:  1.08
+[2024-05-09 12:31:00.060534] (info)   [pwcp25]	118C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257854_851725000.0-call_118.wav /app/media/pwcp25/2024/5/9/3122-1715257854_851725000.0-call_118.json /app/media/pwcp25/2024/5/9/3122-1715257854_851725000.0-call_118.m4a
+[2024-05-09 12:31:00.190225] (info)   [pwcp25]	120C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:17.008375] (info)   [pwcp25]	119C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.02658	Call Elapsed: 19
+[2024-05-09 12:31:17.008533] (info)   [pwcp25]	119C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -47
+[2024-05-09 12:31:17.011939] (info)   [pwcp25]	119C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	- Transmission src: 3296605 pos:  0.00 length:  4.50
+[2024-05-09 12:31:17.012737] (info)   [pwcp25]	119C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	- Transmission src: 3296605 pos:  4.50 length:  8.82 errors: 90 spikes: 6
+[2024-05-09 12:31:17.082145] (info)   [pwcp25]	119C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257858_852787500.0-call_119.wav /app/media/pwcp25/2024/5/9/3122-1715257858_852787500.0-call_119.json /app/media/pwcp25/2024/5/9/3122-1715257858_852787500.0-call_119.m4a
+[2024-05-09 12:31:19.574753] (info)   [pwcp25]	121C	TG:       3040 (             PWSchBus C)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:22.457627] (info)   [pwcp25]	122C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:25.715352] (info)   [pwcp25]	123C	TG:       3040 (             PWSchBus C)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:27.840420] (info)   [pwcp25]	124C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:31:28.409456] (info)   [pwcp25]	125C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:31.103338] (info)   [pwcp25]	124C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Unit ID set via Control Channel, ext: 3296605	current: -1	 samples: 0
+[2024-05-09 12:31:33.213619] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:31:34.485130] (info)   [pwcp25]	127C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:37.009161] (info)   [pwcp25]	124C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.12257	Call Elapsed: 10
+[2024-05-09 12:31:37.009296] (info)   [pwcp25]	124C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -103
+[2024-05-09 12:31:37.027249] (info)   [pwcp25]	124C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	- Transmission src: 3291474 pos:  0.00 length:  2.16
+[2024-05-09 12:31:37.027338] (info)   [pwcp25]	124C	TG:       3122 (         PWPD Central 1)	Freq: 852.787500 MHz	- Transmission src: 3296605 pos:  2.16 length:  1.44
+[2024-05-09 12:31:37.072036] (info)   [pwcp25]	124C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715257887_852787500.0-call_124.wav /app/media/pwcp25/2024/5/9/3122-1715257887_852787500.0-call_124.json /app/media/pwcp25/2024/5/9/3122-1715257887_852787500.0-call_124.m4a
+[2024-05-09 12:31:39.096890] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Unit ID set via Control Channel, ext: 3296608	current: -1	 samples: 0
+[2024-05-09 12:31:42.167213] (info)   [pwcp25]	128C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:42.937100] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:31:44.673296] (info)   [pwcp25]	130C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:45.009426] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.72949	Call Elapsed: 12
+[2024-05-09 12:31:45.009570] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -75
+[2024-05-09 12:31:45.012974] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	- Transmission src: 3291617 pos:  0.00 length:  4.68
+[2024-05-09 12:31:45.013975] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	- Transmission src: 3296608 pos:  4.68 length:  0.90 errors: 90 spikes: 6
+[2024-05-09 12:31:45.056925] (info)   [pwcp25]	126C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1007-1715257893_851962500.0-call_126.wav /app/media/pwcp25/2024/5/9/1007-1715257893_851962500.0-call_126.json /app/media/pwcp25/2024/5/9/1007-1715257893_851962500.0-call_126.m4a
+[2024-05-09 12:31:46.212626] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:31:48.507521] (info)   [pwcp25]	131C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	Starting P25 Recorder Num [1]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:31:49.032790] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3290773	current: -1	 samples: 0
+[2024-05-09 12:31:52.098315] (info)   [pwcp25]	132C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:31:55.006950] (info)   [pwcp25]	131C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:5.33537	Call Elapsed: 7
+[2024-05-09 12:31:55.007086] (info)   [pwcp25]	131C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	Stopping P25 Recorder Num [1]	TDMA: false	Slot: 0	Hz Error: 11
+[2024-05-09 12:31:55.012158] (info)   [pwcp25]	131C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	- Transmission src: 3296613 pos:  0.00 length:  0.72
+[2024-05-09 12:31:55.057970] (info)   [pwcp25]	131C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2001-1715257908_853175000.0-call_131.wav /app/media/pwcp25/2024/5/9/2001-1715257908_853175000.0-call_131.json /app/media/pwcp25/2024/5/9/2001-1715257908_853175000.0-call_131.m4a
+[2024-05-09 12:31:56.377060] (info)   [pwcp25]	133C	TG:       2001 (                PWFD 5A)	Freq: 851.962500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:31:57.658311] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:31:59.649851] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3290773	current: -1	 samples: 0
+[2024-05-09 12:32:02.081337] (info)   [pwcp25]	134C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:32:03.424799] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:32:03.872280] (info)   [pwcp25]	135C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	Starting P25 Recorder Num [1]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:32:06.010518] (info)   [pwcp25]	133C	TG:       2001 (                PWFD 5A)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.35866	Call Elapsed: 10
+[2024-05-09 12:32:06.010662] (info)   [pwcp25]	133C	TG:       2001 (                PWFD 5A)	Freq: 851.962500 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -110
+[2024-05-09 12:32:06.014142] (info)   [pwcp25]	133C	TG:       2001 (                PWFD 5A)	Freq: 851.962500 MHz	- Transmission src: 3296613 pos:  0.00 length:  5.04 errors: 90 spikes: 6
+[2024-05-09 12:32:06.060407] (info)   [pwcp25]	133C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2001-1715257916_851962500.0-call_133.wav /app/media/pwcp25/2024/5/9/2001-1715257916_851962500.0-call_133.json /app/media/pwcp25/2024/5/9/2001-1715257916_851962500.0-call_133.m4a
+[2024-05-09 12:32:09.008212] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.12266	Call Elapsed: 27
+[2024-05-09 12:32:09.008349] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -27
+[2024-05-09 12:32:09.012657] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3290773 pos:  0.00 length:  1.26
+[2024-05-09 12:32:09.012852] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3296604 pos:  1.26 length:  0.90 errors: 45 spikes: 3
+[2024-05-09 12:32:09.012935] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3290773 pos:  2.16 length:  6.48
+[2024-05-09 12:32:09.013094] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3296604 pos:  8.64 length:  0.54 errors: 45 spikes: 3
+[2024-05-09 12:32:09.013134] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3290773 pos:  9.18 length:  2.34
+[2024-05-09 12:32:09.013167] (info)   [pwcp25]	129C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3296604 pos: 11.52 length:  1.08 errors: 45 spikes: 3
+[2024-05-09 12:32:09.078034] (info)   [pwcp25]	129C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715257902_852900000.0-call_129.wav /app/media/pwcp25/2024/5/9/1003-1715257902_852900000.0-call_129.json /app/media/pwcp25/2024/5/9/1003-1715257902_852900000.0-call_129.m4a
+[2024-05-09 12:32:11.858035] (info)   [pwcp25]	136C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:32:17.006005] (info)   [pwcp25]	135C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.88439	Call Elapsed: 14
+[2024-05-09 12:32:17.006146] (info)   [pwcp25]	135C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	Stopping P25 Recorder Num [1]	TDMA: false	Slot: 0	Hz Error: 25
+[2024-05-09 12:32:17.008830] (info)   [pwcp25]	135C	TG:       2001 (                PWFD 5A)	Freq: 853.175000 MHz	- Transmission src: 3296613 pos:  0.00 length:  7.92
+[2024-05-09 12:32:17.062998] (info)   [pwcp25]	135C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2001-1715257923_853175000.0-call_135.wav /app/media/pwcp25/2024/5/9/2001-1715257923_853175000.0-call_135.json /app/media/pwcp25/2024/5/9/2001-1715257923_853175000.0-call_135.m4a
+[2024-05-09 12:32:17.688763] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:32:20.890759] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:32:22.875128] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	Unit ID set via Control Channel, ext: 3290773	current: -1	 samples: 0
+[2024-05-09 12:32:30.803647] (info)   [pwcp25]	138C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:32:31.006672] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.58808	Call Elapsed: 14
+[2024-05-09 12:32:31.006807] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -108
+[2024-05-09 12:32:31.009502] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	- Transmission src: 3290773 pos:  0.00 length:  1.08
+[2024-05-09 12:32:31.009817] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	- Transmission src: 3296604 pos:  1.08 length:  1.08
+[2024-05-09 12:32:31.009864] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	- Transmission src: 3290773 pos:  2.16 length:  0.72
+[2024-05-09 12:32:31.009897] (info)   [pwcp25]	137C	TG:       1003 (            PWPD East 1)	Freq: 851.725000 MHz	- Transmission src: 3290773 pos:  2.88 length:  1.80
+[2024-05-09 12:32:31.050133] (info)   [pwcp25]	137C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715257937_851725000.0-call_137.wav /app/media/pwcp25/2024/5/9/1003-1715257937_851725000.0-call_137.json /app/media/pwcp25/2024/5/9/1003-1715257937_851725000.0-call_137.m4a
+[2024-05-09 12:32:32.669531] (info)   [pwcp25]	139C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:32:33.023808] (info)   Currently Active Calls: 3
+[2024-05-09 12:32:33.024005] (info)   [pwcp25]	136C TG:       3038 (             PWSchBus E) Freq: 851.475000 MHz Elapsed:   22 State: monitoring : IGNORED TG
+[2024-05-09 12:32:33.024260] (info)   [pwcp25]	138C TG:       3038 (             PWSchBus E) Freq: 852.725000 MHz Elapsed:    3 State: monitoring : IGNORED TG
+[2024-05-09 12:32:33.024299] (info)   [pwcp25]	139C TG:       3042 (             PWSchBus W) Freq: 852.725000 MHz Elapsed:    1 State: monitoring : IGNORED TG
+[2024-05-09 12:32:33.024323] (info)   Recorders: 
+[2024-05-09 12:32:33.024336] (info)   [ Source 0: 853.643750 MHz ] rtl=128
+[2024-05-09 12:32:33.024360] (info)   	[ 0 ] P25	State: available
+[2024-05-09 12:32:33.024377] (info)   	[ 1 ] P25	State: available
+[2024-05-09 12:32:33.024392] (info)   	[ 2 ] P25	State: available
+[2024-05-09 12:32:33.024405] (info)   	[ 3 ] P25	State: available
+[2024-05-09 12:32:33.024419] (info)   	[ 4 ] P25	State: available
+[2024-05-09 12:32:33.024434] (info)   [ Source 1: 852.171875 MHz ] rtl=256
+[2024-05-09 12:32:33.024455] (info)   	[ 5 ] P25	State: available
+[2024-05-09 12:32:33.024469] (info)   	[ 6 ] P25	State: available
+[2024-05-09 12:32:33.024483] (info)   	[ 7 ] P25	State: available
+[2024-05-09 12:32:33.024497] (info)   	[ 8 ] P25	State: available
+[2024-05-09 12:32:33.024511] (info)   	[ 9 ] P25	State: available
+[2024-05-09 12:32:33.024525] (info)   	[ 10 ] P25	State: available
+[2024-05-09 12:32:33.024538] (info)   	[ 11 ] P25	State: available
+[2024-05-09 12:32:33.024552] (info)   	[ 12 ] P25	State: available
+[2024-05-09 12:32:33.024566] (info)   	[ 13 ] P25	State: available
+[2024-05-09 12:32:33.024579] (info)   	[ 14 ] P25	State: available
+[2024-05-09 12:32:33.024593] (info)   Control Channel Decode Rates: 
+[2024-05-09 12:32:33.024606] (info)   [pwcp25] 38 msg/sec
+[2024-05-09 12:32:35.740572] (info)   [pwcp25]	140C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:32:38.503045] (info)   [pwcp25]	140C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:32:40.414126] (info)   [pwcp25]	141C	TG:       3040 (             PWSchBus C)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:32:42.341702] (info)   [pwcp25]	142C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:32:45.013036] (info)   [pwcp25]	140C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:5.05649	Call Elapsed: 10
+[2024-05-09 12:32:45.013187] (info)   [pwcp25]	140C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -59
+[2024-05-09 12:32:45.024252] (info)   [pwcp25]	140C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3291697 pos:  0.00 length:  1.44
+[2024-05-09 12:32:45.024484] (info)   [pwcp25]	140C	TG:       1003 (            PWPD East 1)	Freq: 852.900000 MHz	- Transmission src: 3296604 pos:  1.44 length:  1.08
+[2024-05-09 12:32:45.062731] (info)   [pwcp25]	140C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715257955_852900000.0-call_140.wav /app/media/pwcp25/2024/5/9/1003-1715257955_852900000.0-call_140.json /app/media/pwcp25/2024/5/9/1003-1715257955_852900000.0-call_140.m4a
+[2024-05-09 12:32:57.747798] (info)   [pwcp25]	143C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:33:00.639487] (info)   [pwcp25]	144C	TG:       3040 (             PWSchBus C)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:05.013414] (info)   [pwcp25]	143C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.73746	Call Elapsed: 8
+[2024-05-09 12:33:05.013570] (info)   [pwcp25]	143C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -136
+[2024-05-09 12:33:05.016537] (info)   [pwcp25]	143C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	- Transmission src: 3296612 pos:  0.00 length:  2.34 errors: 90 spikes: 6
+[2024-05-09 12:33:05.087867] (info)   [pwcp25]	143C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257977_851725000.0-call_143.wav /app/media/pwcp25/2024/5/9/2003-1715257977_851725000.0-call_143.json /app/media/pwcp25/2024/5/9/2003-1715257977_851725000.0-call_143.m4a
+[2024-05-09 12:33:05.554457] (info)   [pwcp25]	145C	TG:       3025 (             PW-M ADC 3)	Freq: 852.787500 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:06.900008] (info)   [pwcp25]	146C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:07.284494] (info)   [pwcp25]	147C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:33:08.381743] (info)   [pwcp25]	148C	TG:      65026 (                      -)	Freq: 853.175000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:33:12.479570] (info)   [pwcp25]	149C	TG:       3025 (             PW-M ADC 3)	Freq: 851.962500 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:13.758881] (info)   [pwcp25]	150C	TG:      65026 (                      -)	Freq: 851.725000 MHz	Not Recording: TG not in Talkgroup File 
+[2024-05-09 12:33:17.213806] (info)   [pwcp25]	151C	TG:       3042 (             PWSchBus W)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:21.125087] (info)   [pwcp25]	152C	TG:       3038 (             PWSchBus E)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:23.096308] (info)   [pwcp25]	153C	TG:       3042 (             PWSchBus W)	Freq: 851.475000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:26.008519] (info)   [pwcp25]	147C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.95471	Call Elapsed: 19
+[2024-05-09 12:33:26.008662] (info)   [pwcp25]	147C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -86
+[2024-05-09 12:33:26.011843] (info)   [pwcp25]	147C	TG:       2003 (                PWFD 5B)	Freq: 852.900000 MHz	- Transmission src: 3296612 pos:  0.00 length: 13.50 errors: 90 spikes: 6
+[2024-05-09 12:33:26.060861] (info)   [pwcp25]	147C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/2003-1715257987_852900000.0-call_147.wav /app/media/pwcp25/2024/5/9/2003-1715257987_852900000.0-call_147.json /app/media/pwcp25/2024/5/9/2003-1715257987_852900000.0-call_147.m4a
+[2024-05-09 12:33:26.166046] (info)   [pwcp25]	154C	TG:       3038 (             PWSchBus E)	Freq: 851.450000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:28.980095] (info)   [pwcp25]	155C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:33:30.003712] (info)   [pwcp25]	156C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Starting P25 Recorder Num [0]	TDMA: false	Slot: 0	QPSK: true
+[2024-05-09 12:33:35.000362] (info)   [pwcp25]	157C	TG:       3042 (             PWSchBus W)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:35.966073] (info)   [pwcp25]	158C	TG:       3038 (             PWSchBus E)	Freq: 852.725000 MHz	Not recording talkgroup. Priority is -1.
+[2024-05-09 12:33:36.352349] (info)   [pwcp25]	156C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Unit ID set via Control Channel, ext: 3296604	current: -1	 samples: 0
+[2024-05-09 12:33:39.003487] (info)   [pwcp25]	155C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.80656	Call Elapsed: 11
+[2024-05-09 12:33:39.003631] (info)   [pwcp25]	155C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	Stopping P25 Recorder Num [5]	TDMA: false	Slot: 0	Hz Error: -48
+[2024-05-09 12:33:39.006253] (info)   [pwcp25]	155C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	- Transmission src: 3320886 pos:  0.00 length:  2.70
+[2024-05-09 12:33:39.007581] (info)   [pwcp25]	155C	TG:       3122 (         PWPD Central 1)	Freq: 851.700000 MHz	- Transmission src: 3296605 pos:  2.70 length:  1.62 errors: 90 spikes: 6
+[2024-05-09 12:33:39.049510] (info)   [pwcp25]	155C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/3122-1715258008_851700000.0-call_155.wav /app/media/pwcp25/2024/5/9/3122-1715258008_851700000.0-call_155.json /app/media/pwcp25/2024/5/9/3122-1715258008_851700000.0-call_155.m4a
+[2024-05-09 12:33:42.013883] (info)   [pwcp25]	156C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.44689	Call Elapsed: 12
+[2024-05-09 12:33:42.014025] (info)   [pwcp25]	156C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	Stopping P25 Recorder Num [0]	TDMA: false	Slot: 0	Hz Error: -122
+[2024-05-09 12:33:42.017216] (info)   [pwcp25]	156C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	- Transmission src: 3291739 pos:  0.00 length:  4.32
+[2024-05-09 12:33:42.017300] (info)   [pwcp25]	156C	TG:       1003 (            PWPD East 1)	Freq: 852.787500 MHz	- Transmission src: 3296604 pos:  4.32 length:  0.90
+[2024-05-09 12:33:42.069460] (info)   [pwcp25]	156C 	 Running upload script: ./encode-upload.sh /app/media/pwcp25/2024/5/9/1003-1715258010_852787500.0-call_156.wav /app/media/pwcp25/2024/5/9/1003-1715258010_852787500.0-call_156.json /app/media/pwcp25/2024/5/9/1003-1715258010_852787500.0-call_156.m4a
+[2024-05-09 12:33:46.133316] (info)   [pwcp25]	159C	TG:       1003 (            PWPD East 1)	Freq: 851.962500 MHz	Starting P25 Recorder Num [5]	TDMA: false	Slot: 0	QPSK: true

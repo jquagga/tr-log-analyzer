@@ -28,7 +28,7 @@ def parselog():
             calldate = datetime.datetime.strptime(match[1], "%Y-%m-%d %H:%M:%S.%f")
             callts = calldate.timestamp()
             # Index for the dict is timestamp(ish)-talkgroup
-            callindex = f"{int(callts)}-" + match[5]
+            callindex = f"{int(callts)}"
 
             # Second round of regexp.  Now we are going to harvest data from calldata - the "everything else"
             regexp_dict = {
@@ -62,7 +62,12 @@ def parselog():
 
 
 def pandasconvert(calldict):
-    return pd.DataFrame.from_dict(calldict, orient="index")
+    calldf = pd.DataFrame.from_dict(calldict, orient="index")
+    # Technically this shouldn't be needed.  The dict construction _should_ set the class
+    # but for some reason it skips setting standard.  It does set duration though so that part of
+    # of the loop works.  This workaround sets the class to standard if there is a duration.
+    calldf.loc[calldf["duration"].notna(), "callclass"] = "standard"
+    return calldf
 
 
 def main():

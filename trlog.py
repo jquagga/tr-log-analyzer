@@ -15,7 +15,8 @@ def parselog():
     logfile = gzip.open("tr.log.gz", "rt")
     # Define the regex pattern for our log entries
     # line = "[2024-05-09 12:31:45.009426] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.72949	Call Elapsed: 12"
-    log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+).*TG:.*\((.*)\).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
+    # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+).*TG:.*\((.*)\).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
+    log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+)\S+\s+\S+\s+(\d+).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
     # If you DO NOT have "talkgroupDisplayFormat": "id_tag" set, you can change the log_pattern to this below to grab the numeric
     # talkgroup numbers:
     # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+)\S+\s+\S+\s+(\d+).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
@@ -30,70 +31,32 @@ def parselog():
             callindex = f"{int(callts)}-" + match[5]
 
             # Second round of regexp.  Now we are going to harvest data from calldata - the "everything else"
-            # Yes, this does need to be refactored as a loop ...
-            # Note to me, make the regexp a list, for loop it, and change continue to break
-            # Not recording talkgroup. Priority is -1.
-            data_pattern = r".*(Not recording talkgroup.).*"
-            if datamatch := re.match(data_pattern, calldata):
-                calldict[callindex] = {"excluded": True}
-                calldict[callindex].update(
-                    {
-                        "calldate": calldate,
-                        "loglevel": match[2],
-                        "system": match[3],
-                        "callnumber": int(match[4]),
-                        "talkgroup": match[5].strip(),
-                        "frequency": float(match[6]),
-                    }
-                )
-                continue
-            # Not Recording: ENCRYPTED - src: 3290217
-            data_pattern = r".*(ENCRYPTED).*"
-            if datamatch := re.match(data_pattern, calldata):
-                calldict[callindex] = {"encrypted": True}
-                calldict[callindex].update(
-                    {
-                        "calldate": calldate,
-                        "loglevel": match[2],
-                        "system": match[3],
-                        "callnumber": int(match[4]),
-                        "talkgroup": match[5].strip(),
-                        "frequency": float(match[6]),
-                    }
-                )
-                continue
-            # Not Recording: TG not in Talkgroup File
-            data_pattern = r".*(TG not in Talkgroup File).*"
-            if datamatch := re.match(data_pattern, calldata):
-                calldict[callindex] = {"unknown_talkgroup": True}
-                calldict[callindex].update(
-                    {
-                        "calldate": calldate,
-                        "loglevel": match[2],
-                        "system": match[3],
-                        "callnumber": int(match[4]),
-                        "talkgroup": match[5].strip(),
-                        "frequency": float(match[6]),
-                    }
-                )
-                continue
-            # Concluding Recorded Call - Last Update: 4s	Recorder last write:4.4819	Call Elapsed: 7
-            data_pattern = r".*Call Elapsed:\s+(\d+)"
-            if datamatch := re.match(data_pattern, calldata):
-                calldict[callindex] = {"duration": int(datamatch[1])}
-                # This log event happens at the end of a call, so we should adjust the calltime
-                # back by duration seconds to get to the start.
-                calldate = calldate + datetime.timedelta(seconds=-int(datamatch[1]))
-                calldict[callindex].update(
-                    {
-                        "calldate": calldate,
-                        "loglevel": match[2],
-                        "system": match[3],
-                        "callnumber": int(match[4]),
-                        "talkgroup": match[5].strip(),
-                        "frequency": float(match[6]),
-                    }
-                )
+            regexp_dict = {
+                "excluded": r".*(Not recording talkgroup.).*",
+                "encrypted": r".*(ENCRYPTED).*",
+                "unknown_tg": r".*(TG not in Talkgroup File).*",
+                "standard": r".*Call Elapsed:\s+(\d+)",
+            }
+            for callclass, data_pattern in regexp_dict.items():
+                if datamatch := re.match(data_pattern, calldata):
+                    calldict[callindex] = {"callclass": callclass}
+                    if callclass == "standard":
+                        calldict[callindex] = {"duration": int(datamatch[1])}
+                        # This log event happens at the end of a call, so we should adjust the calltime
+                        # back by duration seconds to get to the start.
+                        calldate = calldate + datetime.timedelta(
+                            seconds=-int(datamatch[1])
+                        )
+                    calldict[callindex].update(
+                        {
+                            "calldate": calldate,
+                            "loglevel": match[2],
+                            "system": match[3],
+                            "callnumber": int(match[4]),
+                            "talkgroup": match[5].strip(),
+                            "frequency": float(match[6]),
+                        }
+                    )
     logfile.close()
     return calldict
 
@@ -106,6 +69,7 @@ def main():
     calldict = parselog()
     calldf = pandasconvert(calldict)
     calldf.sort_values(by="calldate", inplace=True)
+    print(calldf.head())
     calldf.to_csv("tr.csv.gz", index=False)
 
 

@@ -11,8 +11,8 @@ import pandas as pd
 
 
 def parselog():
-    calldict = {}
     logfile = gzip.open("tr.log.gz", "rt")
+    calldict = {}
     # Define the regex pattern for our log entries
     # line = "[2024-05-09 12:31:45.009426] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.72949	Call Elapsed: 12"
     # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+).*TG:.*\((.*)\).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
@@ -103,13 +103,13 @@ def pandasconvert(calldict):
         ],
         axis=1,
     )
+    calldf.sort_values(by="calldate", inplace=True)
     return calldf
 
 
 def main():
     calldict = parselog()
     calldf = pandasconvert(calldict)
-    calldf.sort_values(by="calldate", inplace=True)
     print(calldf.head())
     calldf.to_csv("tr.csv.gz", index=False)
 

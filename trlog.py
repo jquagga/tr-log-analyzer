@@ -11,8 +11,8 @@ import pandas as pd
 
 
 def parselog():
-    calldict = {}
     logfile = gzip.open("tr.log.gz", "rt")
+    calldict = {}
     # Define the regex pattern for our log entries
     # line = "[2024-05-09 12:31:45.009426] (info)   [pwcp25]	126C	TG:       1007 (            PWPD West 1)	Freq: 851.962500 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.72949	Call Elapsed: 12"
     # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+).*TG:.*\((.*)\).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
@@ -28,7 +28,7 @@ def parselog():
             calldate = datetime.datetime.strptime(match[1], "%Y-%m-%d %H:%M:%S.%f")
             callts = calldate.timestamp()
             # Index for the dict is timestamp(ish)-talkgroup
-            callindex = f"{int(callts)}-" + match[5]
+            callindex = f"{int(callts)}"
 
             # Second round of regexp.  Now we are going to harvest data from calldata - the "everything else"
             regexp_dict = {
@@ -53,7 +53,7 @@ def parselog():
                             "loglevel": match[2],
                             "system": match[3],
                             "callnumber": int(match[4]),
-                            "talkgroup": match[5].strip(),
+                            "talkgroup": int(match[5].strip()),
                             "frequency": float(match[6]),
                         }
                     )
@@ -62,13 +62,54 @@ def parselog():
 
 
 def pandasconvert(calldict):
-    return pd.DataFrame.from_dict(calldict, orient="index")
+    calldf = pd.DataFrame.from_dict(calldict, orient="index")
+    # Technically this shouldn't be needed.  The dict construction _should_ set the class
+    # but for some reason it skips setting standard.  It does set duration though so that part of
+    # of the loop works.  This workaround sets the class to standard if there is a duration.
+    calldf.loc[calldf["duration"].notna(), "callclass"] = "standard"
+
+    # We're going to use ChanList.csv if we have it to convert decimal talkgroups to their
+    # Alpha Longform.  While this could be in the original log line, we do it here to take care
+    # of logs which might not have that enabled AND it allows us to see the number value of "unlisted" tg.
+    try:
+        chanlist = pd.read_csv("ChanList.csv")
+        print(chanlist)
+        calldf = pd.merge(
+            left=calldf,
+            right=chanlist,
+            left_on="talkgroup",
+            right_on="Decimal",
+            how="left",
+        )
+        # Talkgroup was an int for matching; now it becomes a string
+        calldf[["talkgroup"]] = calldf[["talkgroup"]].astype("str")
+        # And now we merge in the Alpha Tag to talkgroups defined.  Undefined keep their
+        # numeric value
+        calldf.loc[calldf["Alpha Tag"].notna(), "talkgroup"] = calldf["Alpha Tag"]
+    except Exception:
+        print("We couldn't open ChanList so talkgroups will remain numeric.")
+    # Finally, either way let's sort the columns in the dataframe and dump the extra columns
+    # from the ChanList merge
+    calldf = calldf.filter(
+        [
+            "calldate",
+            "loglevel",
+            "system",
+            "callnumber",
+            "callclass",
+            "talkgroup",
+            "frequency",
+            "duration",
+        ],
+        axis=1,
+    )
+    calldf.sort_values(by="calldate", inplace=True)
+    return calldf
 
 
 def main():
     calldict = parselog()
     calldf = pandasconvert(calldict)
-    calldf.sort_values(by="calldate", inplace=True)
     print(calldf.head())
     calldf.to_csv("tr.csv.gz", index=False)
 

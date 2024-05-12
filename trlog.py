@@ -53,7 +53,7 @@ def parselog():
                             "loglevel": match[2],
                             "system": match[3],
                             "callnumber": int(match[4]),
-                            "talkgroup": match[5].strip(),
+                            "talkgroup": int(match[5].strip()),
                             "frequency": float(match[6]),
                         }
                     )
@@ -67,6 +67,42 @@ def pandasconvert(calldict):
     # but for some reason it skips setting standard.  It does set duration though so that part of
     # of the loop works.  This workaround sets the class to standard if there is a duration.
     calldf.loc[calldf["duration"].notna(), "callclass"] = "standard"
+
+    # We're going to use ChanList.csv if we have it to convert decimal talkgroups to their
+    # Alpha Longform.  While this could be in the original log line, we do it here to take care
+    # of logs which might not have that enabled AND it allows us to see the number value of "unlisted" tg.
+    try:
+        chanlist = pd.read_csv("ChanList.csv")
+        print(chanlist)
+        calldf = pd.merge(
+            left=calldf,
+            right=chanlist,
+            left_on="talkgroup",
+            right_on="Decimal",
+            how="left",
+        )
+        # Talkgroup was an int for matching; now it becomes a string
+        calldf[["talkgroup"]] = calldf[["talkgroup"]].astype("str")
+        # And now we merge in the Alpha Tag to talkgroups defined.  Undefined keep their
+        # numeric value
+        calldf.loc[calldf["Alpha Tag"].notna(), "talkgroup"] = calldf["Alpha Tag"]
+    except Exception:
+        print("We couldn't open ChanList so talkgroups will remain numeric.")
+    # Finally, either way let's sort the columns in the dataframe and dump the extra columns
+    # from the ChanList merge
+    calldf = calldf.filter(
+        [
+            "calldate",
+            "loglevel",
+            "system",
+            "callnumber",
+            "callclass",
+            "talkgroup",
+            "frequency",
+            "duration",
+        ],
+        axis=1,
+    )
     return calldf
 
 

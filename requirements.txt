@@ -1,2 +1,2 @@
 pandas==2.2.2
-plotly==plotly 5.22.0
+plotly==5.22.0

@@ -21,6 +21,7 @@ def parselog():
     # talkgroup numbers:
     # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+)\S+\s+\S+\s+(\d+).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
     for line in logfile:
+        # line = "2024-05-09T12:23:26.007469771Z [2024-05-09 12:23:26.005761] (info)   [pwcp25]	16C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.79871	Call Elapsed: 13"
         if match := re.match(log_pattern, line):
             calldata = match[7]
             # Technically this isn't a real unixtimestamp as it's not timezone aware,
@@ -28,13 +29,14 @@ def parselog():
             calldate = datetime.datetime.strptime(match[1], "%Y-%m-%d %H:%M:%S.%f")
             callts = calldate.timestamp()
             # Index for the dict is timestamp(ish)-talkgroup
-            callindex = f"{int(callts)}"
+            callindex = f"{int(callts)}{int(match[5].strip())}"
 
             # Second round of regexp.  Now we are going to harvest data from calldata - the "everything else"
             regexp_dict = {
                 "excluded": r".*(Not recording talkgroup.).*",
-                "encrypted": r".*(ENCRYPTED).*",
+                "encrypted": r".*(Not Recording: ENCRYPTED).*",
                 "unknown_tg": r".*(TG not in Talkgroup File).*",
+                "no_source": r".*(no source covering Freq).*",
                 "standard": r".*Call Elapsed:\s+(\d+)",
             }
             for callclass, data_pattern in regexp_dict.items():
@@ -49,9 +51,9 @@ def parselog():
                         )
                     calldict[callindex].update(
                         {
-                            "calldate": calldate,
-                            "loglevel": match[2],
-                            "system": match[3],
+                            "calldate": str(calldate),
+                            "loglevel": str(match[2]),
+                            "system": str(match[3]),
                             "callnumber": int(match[4]),
                             "talkgroup": int(match[5].strip()),
                             "frequency": float(match[6]),
@@ -73,7 +75,6 @@ def pandasconvert(calldict):
     # of logs which might not have that enabled AND it allows us to see the number value of "unlisted" tg.
     try:
         chanlist = pd.read_csv("ChanList.csv")
-        print(chanlist)
         calldf = pd.merge(
             left=calldf,
             right=chanlist,

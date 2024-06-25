@@ -20,6 +20,8 @@ def parselog():
     # If you DO NOT have "talkgroupDisplayFormat": "id_tag" set, you can change the log_pattern to this below to grab the numeric
     # talkgroup numbers:
     # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+)\S+\s+\S+\s+(\d+).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
+    # And if you are using "talkgroupDisplayFormat": "tag_id", try this pattern:
+    # log_pattern = r".*\[(\S+\s\S+)\]\s+\((\S+)\)\s+\[(\S+)\]\s+(\d+).*(\d+).*Freq:\s+(\d+\.\d+).*MHz\s+(.*)"
     for line in logfile:
         # line = "2024-05-09T12:23:26.007469771Z [2024-05-09 12:23:26.005761] (info)   [pwcp25]	16C	TG:       2003 (                PWFD 5B)	Freq: 851.725000 MHz	Concluding Recorded Call - Last Update: 4s	Recorder last write:4.79871	Call Elapsed: 13"
         if match := re.match(log_pattern, line):
